@@ -1,38 +1,170 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.Clients {
+  background-color: #dfdfdf;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.Clients img {
+  height: 2rem;
+  width: 5rem;
+  filter: grayscale(100%);
+  transition: all 0.8s ease-in-out;
+}
+
+.Clients img:hover {
+  filter: none;
+}
+
+.winner {
+  width: 100%;
+  height: auto;
+}
+
+.size {
+  font-size: 14px;
+}
+
+.text-box {
+  position: absolute;
+  bottom: 15px;
+  width: 90%;
+  background-color: rgba(255, 255, 255, 0.603);
+  padding: 2px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 8px 0.8px gray;
+}
+
+.text {
+  color: black;
+  opacity: 1;
+  font-size: 14px;
+}
+
+.boxes {
+  background-color: #dfdfdf;
+  padding: 8px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.testimonial-section {
+  background-color: #A82C48;
+  /* height: 70vh; */
+}
+
+.testimonial-section .carousel-item {
+  margin-top: 3rem;
+  padding: 10rem 3.125rem;
+  background-color: rgba(255, 255, 255, 0.932);
+  border-radius: 0.9375rem;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.testimonial-section .carousel-item .carousel-caption p {
+  color: rgba(0, 0, 0, 0.658);
+  font-size: 1.3125rem;
+  line-height: 2.0625rem;
+  padding: 0 11% 0.625rem;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.testimonial-section .carousel-caption img {
+  max-width: 5rem;
+  border-radius: 50%;
+  padding: 0.3125rem;
+}
+
+.testimonial-section .carousel-indicators button {
+  width: 15px;
+  height: 15px;
+  outline: none;
+  border-radius: 50%;
+  border: none;
+  margin-right: 1rem;
+  opacity: 0.2;
+}
+
+.carousel-indicators [data-bs-target] {
+  background-color: #A82C48;
+}
+
+.testimonial-section .carousel-indicators button.active {
+  opacity: 1;
+}
+
+.testimonial-section .carousel-indicators {
+  bottom: +0.5rem;
+}
+
+.testimonial-section .carousel-inner .carousel-item h5 {
+    color: #A82C48;
+    text-transform: capitalize;
+    font-family: var(--secondary-font);
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+ 
+}
+
+@media (max-width : 991px) {
+  .testimonial-section .carousel-item .carousel-caption p {
+    padding: 0;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+@media (max-width : 767px) {
+  .testimonial-section .carousel-item {
+    padding: 11rem 3.125rem;
+  }
+}
+
+@media (max-width : 330px) {
+  .testimonial-section .carousel-item {
+    padding: 13rem 3.125rem;
+  }
+}
+
+.cards {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.card {
+  padding: 10px;
+  border: none;
+  box-shadow: 0px 13px 10px -7px rgba(0, 0, 0, 0.2);
+  transition: all 0.4 cubic-bezier(0.175, 0.885, 0, 1);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card__img {
+  border-radius: 1rem;
 }
+
+.card:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  transform: scale(1.05, 1.05);
+}
+
+.team {
+  background-color: rgba(0, 0, 255, 0.027);
+}
+
+.price {
+  background-color: rgba(0, 0, 255, 0.027);
+}
+
+.radious-for-card {}
